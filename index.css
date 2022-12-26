@@ -3,11 +3,26 @@ html {
 }
 
 body {
+  margin: 0;
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to right top, #1855af, #6c7ac2, #a2a4d6, #d2d0ea, #ffffff);
     overflow: hidden;
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hthree{
+  gap: 5px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  opacity: 0.5;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .circle{
@@ -17,10 +32,10 @@ body {
 
 
 #calculator {
+  margin: 0;
   /* display: grid; */
-  margin: 10vh auto;
-  width: 400px;
-  height: 700px;
+  width: 24rem;
+  height: 44rem;
   background: rgb(2, 0, 36);
   /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(3,1,45,1) 35%, rgba(0,1,124,1) 65%, rgba(101,92,226,1) 100%);  */
   background: #020024;
@@ -40,6 +55,18 @@ body {
   -moz-box-shadow: 20px 24px 40px 0px rgba(0,0,0,0.78);
 }
 
+
+#calculator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+gap: 2rem;
+  
+}
+
+
+
 #screen-el {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: xx-large;
@@ -48,66 +75,30 @@ body {
   height: 80px;
   position: relative;
   color: white;
-  bottom: -150px;
+  align-items: stretch;
   text-align: end;
-  padding-bottom: 0px;
+  padding-bottom: 0px;  
 }
 
-#ui {
-  position: relative;
-  bottom: -190px;
-  margin-bottom: -30px;
+#ui{
+width: 90%;
+height: 60%;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+margin-bottom: -9rem;
 }
 
-#row-el:nth-child(1) button {
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72,
-    #a8eb12
-  );
+#row-el{
+  margin-top: 0.5rem;
 }
 
-#row-el:nth-child(1) button:hover {
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #0372b3,
-    #03aab9,
-    #03db85,
-    #fefffc
-  );
-}
-
-#row-el #num-btn:nth-child(4) {
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72,
-    #a8eb12
-  );
-}
-
-#row-el #num-btn:nth-child(4):hover {
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #0372b3,
-    #03aab9,
-    #03db85,
-    #fefffc
-  );
-}
 
 button {
-  margin: 0px 3px;
+  margin: 0.3em;
   position: sticky;
-  width: 70px;
-  height: 70px;
+  width: 4.5rem;
+  height: 4.5rem;
 
   border: none;
   border-radius: 30px;
@@ -135,6 +126,7 @@ button {
   );
 }
 
+
 button:hover {
   background-image: linear-gradient(
     to left bottom,
@@ -145,20 +137,50 @@ button:hover {
   );
 }
 
-#row-el {
-  align-items: center;
-  height: 70px;
-  display: block;
-  width: 318px;
-  margin: 10px auto;
-  padding: 0;
-
-  border-radius: 10px;
-
-  position: relative;
-  top: 0px;
-  bottom: 0px;
+#row-el:nth-child(1) button {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
 }
+
+#row-el:nth-child(1) button:hover {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #0372b3,
+    #03aab9,
+    #03db85,
+    #fefffc
+  );
+
+}
+#row-el #num-btn:nth-child(4) {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+
+#row-el #num-btn:nth-child(4):hover {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #0372b3,
+    #03aab9,
+    #03db85,
+    #fefffc
+  );
+}
+
 
 #num-btn:hover{
 border:2px solid rgba(248, 248, 255, 0.514);
@@ -169,4 +191,4 @@ border:2px solid rgba(248, 248, 255, 0.514);
    border: 2px solid white;
 }
 }
-
+ 
