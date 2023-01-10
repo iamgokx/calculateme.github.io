@@ -4,16 +4,23 @@ html {
 
 body {
   margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(to right top, #1855af, #6c7ac2, #a2a4d6, #d2d0ea, #ffffff);
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #1855af,
+    #6c7ac2,
+    #a2a4d6,
+    #d2d0ea,
+    #ffffff
+  );
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hthree{
+.hthree {
   gap: 5px;
   display: flex;
   align-self: center;
@@ -22,14 +29,14 @@ body {
   padding: 0;
   font-size: 15px;
   opacity: 0.5;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.circle{
+.circle {
   display: flex;
   float: right;
 }
-
 
 #calculator {
   margin: 0;
@@ -48,51 +55,50 @@ body {
     rgba(16, 13, 117, 1) 85%
   );
 
-
   border-radius: 30px;
-  box-shadow: 20px 24px 40px 0px rgba(0,0,0,0.78);
-  -webkit-box-shadow: 20px 24px 40px 0px rgba(0,0,0,0.78);
-  -moz-box-shadow: 20px 24px 40px 0px rgba(0,0,0,0.78);
+  box-shadow: 20px 24px 40px 0px rgba(0, 0, 0, 0.78);
+  -webkit-box-shadow: 20px 24px 40px 0px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 20px 24px 40px 0px rgba(0, 0, 0, 0.78);
+  overflow: hidden;
 }
 
-
-#calculator{
+#calculator {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-gap: 2rem;
-  
+  gap: 2rem;
+
 }
-
-
 
 #screen-el {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: xx-large;
   letter-spacing: 5px;
-  width: 350px;
+  width: 100%;
   height: 80px;
   position: relative;
   color: white;
   align-items: stretch;
   text-align: end;
-  padding-bottom: 0px;  
+  padding-bottom: 0px;
+
+ 
+  ;
 }
 
-#ui{
-width: 90%;
-height: 60%;
-display: flex;
-flex-direction: column;
-gap: 1.5rem;
-margin-bottom: -9rem;
+#ui {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: -9rem;
 }
 
-#row-el{
+#row-el {
   margin-top: 0.5rem;
 }
-
 
 button {
   margin: 0.3em;
@@ -126,7 +132,6 @@ button {
   );
 }
 
-
 button:hover {
   background-image: linear-gradient(
     to left bottom,
@@ -157,7 +162,6 @@ button:hover {
     #03db85,
     #fefffc
   );
-
 }
 #row-el #num-btn:nth-child(4) {
   background-image: linear-gradient(
@@ -181,14 +185,76 @@ button:hover {
   );
 }
 
-
-#num-btn:hover{
-border:2px solid rgba(248, 248, 255, 0.514);
+#num-btn:hover {
+  border: 2px solid rgba(248, 248, 255, 0.514);
 }
 
 @keyframes button-animation {
-100%{
-   border: 2px solid white;
+  100% {
+    border: 2px solid white;
+  }
 }
+
+@media only screen and (max-width: 700px) {
+  .hthree {
+    font-size: 10px;
+  }
+
+  #calculator {
+    width: 20rem;
+    height: 40rem;
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  button {
+    margin: 0.2em;
+    position: sticky;
+    width: 3.8rem;
+    height: 3.3em;
+
+    border-radius: 30px;
+    color: white;
+    background: rgb(2, 0, 36);
+
+    font-size: large;
+
+    margin-bottom: -100px;
+  }
+
+  #ui {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: -9rem;
+  }
+  
+#screen-el {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
+  letter-spacing: 5px;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  color: white;
+  align-items: stretch;
+  text-align: end;
+  padding-bottom: 0px;
 }
- 
+  
+}
+
+
+3 rounds all online
+
+1-
+2-
+3-operation round 
